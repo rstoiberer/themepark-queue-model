@@ -4,6 +4,8 @@ This project models Disney’s former **FastPass+ virtual queueing system** usin
 
 The simulator helps determine how many FastPasses can be distributed **without significantly degrading the experience** for either customer group.
 
+---
+
 ## 📚 Project Context
 
 From 1999 to 2021, Disney offered FastPasses to let visitors **skip regular queues** by arriving at pre-scheduled times. FastPass holders entered a shorter line, jumping ahead of regular customers — creating a **two-class queuing system**.
@@ -14,6 +16,8 @@ From a modeling perspective, this is a **priority queue**, where:
 
 The central design question:  
 👉 *How many FastPasses can you issue before regular customer experience becomes unacceptable?*
+
+---
 
 ## 🧪 Simulation Model
 
@@ -28,7 +32,9 @@ The central design question:
 
 The simulation runs for 50,000 minutes (with a 5,000-minute warm-up), and computes average **residence times** (waiting + service) for each group as the **FastPass fraction `f`** varies from `0` to `0.95`.
 
-## Sample Outuputs 
+---
+
+## 📊 Sample Outputs 
 
 ![fastpass_results](https://github.com/user-attachments/assets/0a9f92eb-e135-401d-bab9-05ec94618c02)
 
@@ -46,6 +52,8 @@ Recommended FastPass fraction: 0.65
   - Regular/FastPass time ratio: 14.39
 ```
 
+---
+
 ## 🎯 Goal
 
 Find a **balanced FastPass allocation fraction `f`** that:
@@ -53,12 +61,16 @@ Find a **balanced FastPass allocation fraction `f`** that:
 - Avoids punishing regular customers with extreme delays
 - Adjusts appropriately for high- and low-utilization periods
 
+---
+
 ## 🙏 Credits
 
 This project was inspired by and based on starter code provided by  
 **Dr. Dan S. Myers**, Rollins College for the course **Simulation & Stochastic**.
 
-## How to Run the Simulation
+---
+
+## 🚀 How to Run the Simulation
 
 ### 1. Clone the Repository
 ```
